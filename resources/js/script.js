@@ -18,6 +18,9 @@ function Button(num)
 
 	appendNumber = parseFloat(appendNumber);
 	document.getElementById("calculations").value = appendNumber;
+	console.log("PRESSED " + num + " BUTTON")
+	console.log("originalNumber = " + originalNumber);
+	console.log("appendNumber = " + appendNumber);
 }
 
 function ButtonOperator(operator)
@@ -26,6 +29,7 @@ function ButtonOperator(operator)
 		console.log("PRESSED ADDITION BUTTON");
 
 		if (plusClick == true) {
+			//originalNumber = parseFloat(originalNumber);
 			originalNumber = originalNumber + appendNumber;
 			appendNumber = 0;
 			plusClick = false;
@@ -49,7 +53,12 @@ function ButtonOperator(operator)
 
 		plusClick = true;
 		document.getElementById("calculations").value = originalNumber;
+		console.log("originalNumber = " + originalNumber);
+		console.log("appendNumber = " + appendNumber);
+
 	} else if (operator == "-") {
+		console.log("PRESSED SUBTRACTION BUTTON");
+
 		if (plusClick == true) {
 			originalNumber = originalNumber + appendNumber;
 			appendNumber = 0;
@@ -74,7 +83,12 @@ function ButtonOperator(operator)
 
 		minusClick = true;
 		document.getElementById("calculations").value = originalNumber;
+		console.log("originalNumber = " + originalNumber);
+		console.log("appendNumber = " + appendNumber);
+
 	} else if (operator == "*") {
+		console.log("PRESSED MULTIPLICATION BUTTON");
+
 		if (plusClick == true) {
 			originalNumber = originalNumber + appendNumber;
 			appendNumber = 0;
@@ -99,7 +113,12 @@ function ButtonOperator(operator)
 
 		timesClick = true;
 		document.getElementById("calculations").value = originalNumber;
+		console.log("originalNumber = " + originalNumber);
+		console.log("appendNumber = " + appendNumber);
+
 	} else if (operator == "/") {
+		console.log("PRESSED DIVISION BUTTON");
+
 		if (plusClick == true) {
 			originalNumber = originalNumber + appendNumber;
 			appendNumber = 0;
@@ -122,9 +141,15 @@ function ButtonOperator(operator)
 			appendNumber = 0;
 		}
 
+
 		divideClick = true;
 		document.getElementById("calculations").value = originalNumber;
+		console.log("originalNumber = " + originalNumber);
+		console.log("appendNumber = " + appendNumber);
+
 	} else if (operator == "=") {
+		console.log("PRESSED EQUALS BUTTON--FINISHED CALCULATIONS");
+
 		if (plusClick == true) {
 			appendNumber = originalNumber + appendNumber;
 			originalNumber = 0;
@@ -144,15 +169,15 @@ function ButtonOperator(operator)
 		} else {
 			console.log("SOMETHING WENT WRONG");
 		}
+
+		document.getElementById("calculations").value = appendNumber;
+		console.log("originalNumber = " + originalNumber);
+		console.log("appendNumber = " + appendNumber);
+
 	} else {
 		console.log("Operator didn't work.");
 	}
 	
-}
-
-function ButtonPeriod()
-{
-	// add function
 }
 
 function ButtonClear()
@@ -164,4 +189,7 @@ function ButtonClear()
 	timesClick = false;
 	minusClick = false;
 	plusClick = false;
+	console.log("PRESSED CLEAR BUTTON--ALL IS CLEARED")
+	console.log("originalNumber = " + originalNumber);
+	console.log("appendNumber = " + appendNumber);
 }
