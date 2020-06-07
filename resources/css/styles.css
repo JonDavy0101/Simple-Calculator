@@ -1,0 +1,301 @@
+/* General settings */
+
+@font-face {
+  font-family: ubuntu-mono-regular;
+  src: url(../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: ubuntu-mono-bold;
+  src: url(../fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf);
+}
+
+body {
+  background-color: #1A3140;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, label, p, a, input, select, textarea {
+  font-family: ubuntu-mono-bold, monospace;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 5.5rem;
+  letter-spacing: 10px;
+
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-family: ubuntu-mono-regular, monospace;
+  font-size: 1.125rem;
+}
+
+nav li p {
+  font-size: 1.4rem;
+  letter-spacing: 3.5px;
+}
+
+a, a p, a h3 {
+  font-family: ubuntu-mono-bold, monospace;
+  text-decoration: none;
+}
+
+a:hover, a p:hover, a h3:hover {
+  opacity: 0.5;
+}
+
+a:hover, a p:hover, a h3:hover {
+  text-decoration: none;
+}
+
+input, select, textarea {
+  color: #24733F;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  font-family: ubuntu-mono-bold, monospace;
+  font-size: 2rem;
+  height: 90px;
+  padding: 5px 15px 5px 15px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 5px solid #244E73;
+  border-radius: 25px;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+input::placeholder{
+  font-family: ubuntu-mono-regular, monospace;
+}
+
+input[type=date] {}
+
+input[type=submit] {
+  cursor: pointer;
+  background-color: #24733F;
+  color: #FFFFFF;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  box-shadow: 1px 3px 10px #00000072;
+}
+
+input[type=submit]:hover {
+  background-color: #FFFFFF;
+  color: #24733F;
+}
+
+.text-bullets {
+  list-style: none;
+}
+
+.text-bullets li::before {
+  content: "\2022";
+  color: #68da23;
+  font-weight: bold;
+  display: inline-block; 
+  margin-left: -2.5em;
+}
+
+
+/* General colors and backgrounds */
+
+.text-color-primary {
+  color: #1A3140;
+}
+
+.text-color-secondary {
+  color: #24733F;
+}
+
+.text-color-light-primary {
+  color: #244E73;
+}
+
+.text-color-light {
+  color: #FFFFFF;
+}
+
+.text-color-dark {
+  color: #000000;
+}
+
+.bg-color-primary {
+  background-color: #1A3140;
+}
+
+.bg-color-primary-light {
+  background-color: #244E73;
+}
+
+.bg-color-secondary {
+  background-color: #24733F;
+}
+
+.bg-color-light {
+  background-color: #FFFFFF;
+}
+
+.bg-color-dark {
+  background-color: #050A0D;
+}
+
+.text-size-10 {
+  font-size: 0.625rem;
+}
+
+.text-size-11 {
+  font-size: 0.65rem;
+}
+
+.text-size-12 {
+  font-size: 0.75rem;
+}
+
+.text-size-13 {
+  font-size: 0.8rem;
+}
+
+.text-size-14 {
+  font-size: 0.875rem;
+}
+
+.text-size-15 {
+  font-size: 0.92rem;
+}
+
+.text-size-16 {
+  font-size: 1rem;
+}
+
+.text-size-18 {
+  font-size: 1.125rem;
+}
+
+.text-size-20 {
+  font-size: 1.25rem;
+}
+
+.text-size-21 {
+  font-size: 1.3rem;
+}
+
+.text-size-24 {
+  font-size: 1.5rem;
+}
+
+.text-size-25 {
+  font-size: 1.65rem;
+}
+
+.text-size-30 {
+  font-size: 1.875rem;
+}
+
+.text-size-32 {
+  font-size: 2rem;
+}
+
+.text-size-35 {
+  font-size: 2.25rem;
+}
+
+.text-size-40 {
+  font-size: 2.75rem;
+}
+
+
+/* Body */
+
+#background-div {
+  height: 100%;
+  position: fixed;
+  background: url('../images/backgrounds/0101-blank-blurred.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  z-index: -2;
+}
+
+.nav-glyph {
+  width: 20px;
+  margin: 0 10px 7px 0;
+}
+
+.min-100 {
+  min-height: 100%;
+}
+
+#nav-top {
+  position: relative;
+  margin: -90px 0 70px 0;
+  z-index: 1;
+}
+
+#main-navbar {
+  position: relative;
+  background: #24733F 0% 0% no-repeat padding-box;
+}
+
+#nav-logo {
+  width: 200px;
+}
+
+#failed-password {
+  color: #FF0000;
+  font-family: ubuntu-mono-bold, monospace;
+  font-size: 1.3rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 2;
+}
+
+.button {
+  width: 23%;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.calc-result {
+  border-bottom: 3px solid #1A3140;
+}
+
+
+
+/* Responsive Actions */
+
+@media only screen and (max-width: 600px) {
+  #nav-logo {
+    width: 150px;
+  }
+}
+
